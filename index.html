@@ -331,3 +331,80 @@
   </script>
 </body>
 </html>
+<style>
+  /* ... (كل الكود السابق يبقى كما هو) ... */
+
+  /* تحسينات لشاشات الهواتف الصغيرة */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.8rem; /* من 2.2rem إلى 1.8rem */
+      margin-top: 5px;
+    }
+
+    #instruction {
+      font-size: 1.4rem; /* من 1.8rem إلى 1.4rem */
+      margin-top: 5px;
+    }
+
+    #startBtn {
+      padding: 12px 24px;
+      font-size: 1.1rem;
+    }
+
+    #counter {
+      top: 10px;
+      right: 10px;
+      padding: 6px 12px;
+      font-size: 0.95rem;
+    }
+
+    .balloon {
+      width: 45px; /* أصغر قليلاً */
+      height: 65px;
+    }
+
+    .balloon img {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* جعل هدف النقر أكبر (لتحسين تجربة اللمس) */
+    .balloon::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+    }
+
+    #winScreen h2 {
+      font-size: 2.2rem; /* من 3rem إلى 2.2rem */
+    }
+
+    #showPrizeBtn {
+      padding: 12px 30px;
+      font-size: 1.2rem;
+    }
+
+    #countdown {
+      font-size: 4rem; /* من 5rem إلى 4rem */
+    }
+  }
+
+  /* تحسينات إضافية لشاشات عمودية صغيرة جداً (مثل iPhone SE) */
+  @media (max-height: 600px) and (max-width: 400px) {
+    h1 {
+      font-size: 1.6rem;
+      margin-top: 2px;
+    }
+
+    #instruction {
+      font-size: 1.25rem;
+    }
+
+    #counter {
+      font-size: 0.9rem;
+    }
+  }
+</style>
